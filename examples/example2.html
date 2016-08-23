@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+  <script src="../build/ols-treeview.js"></script>
+  <link rel="stylesheet" href="../css/proton/style.min.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+<div><h2>Welcome to the OLS tree example!</h2></div>
+<div id="term-tree"></div>
+
+
+<script>
+$(document).ready(function() {
+
+  var app = require("ols-treeview");
+  var instance = new app();
+
+  options={
+    onclick: function(params, node, relativePath, termIRI, type){
+      alert("This onclick event is overwritten! Please check console.log to see further information about this event!");
+      console.log("params")
+      console.log(params);
+      console.log(node)
+      console.log(relativePath)
+      console.log(termIRI)
+      console.log(type)
+    }
+  }
+
+
+  instance.draw($("#term-tree"), false, "efo", "terms", "http://www.ebi.ac.uk/efo/EFO_0000322", "http://www.ebi.ac.uk/ols", options);
+});
+
+</script>
+</body>
+</html>
