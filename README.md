@@ -1,10 +1,10 @@
 # Introduction
-The purpose of this plugin is enable people to include a standalone ontology treeview in their own project. It is used and was developed for the Ontology Lookup Service (OLS) hosted by the European Bioinformatics Institute (EBI) and can be seen there in action (e.g. http://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000322)  
+The purpose of this plugin is enable people to include a standalone ontology treeview in their own project. It is used and was developed for the Ontology Lookup Service (OLS) hosted by the European Bioinformatics Institute (EBI) and can be seen there in action (e.g. <a href="http://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000322">here</a>)  
 
 # How to implement the plugin
 There are multiple ways of implementing the plugin:
-- You can download the javascript file stored in the build folder and include the file by using normal script tags (github). See the example html pages for more information
-- The plugin is available as npm module - search for ols-treeview or follow this link
+- You can download the javascript file stored in the build folder and include the file by using normal script tags. See the example html pages for more information. (<a href="https://github.com/LLTommy/OLS-treeview">github</a>)
+- The plugin is available as npm module - search for ols-treeview or follow <a href="https://www.npmjs.com/package/ols-treeview">this link</a>
 - The widget is listed on the <a href="http://www.biojs.io">bio.js website</a> where you could find other interesting visualisation for biological data
 
 # How to start the plugin
@@ -21,12 +21,12 @@ The plugin has a couple of input parameters, namely "div", "showSibblings", olso
 - *olsontology*: Short Name of the ols ontology of the term you want to display (e.g. efo, bfo, ...) - a list of available ontologies can be found here  (e.g. http://www.ebi.ac.uk/ols/ontologies)
 - *ols_termtype*: Can have the value terms, property, individual or ontology - depending on the classification of the thing in ols
 - *ols_iri*: Is the iri the term has in ols (e.g.: http://purl.obolibrary.org/obo/BFO_0000182, http://purl.obolibrary.org/obo/GO_0098743, ...  )
-- *path*: Is the base path of service - where the tree gets its data from. In all relevant cases this is going to be http://www.ebi.ac.uk/ols
-- *options*: This field offers the possibility to overwrite the onclick function and therefore to handle click events in a different way. Check example2 for more information. if the option field is empty {} they widget is started with default behavior - which means it links to the ols main page. There might be the possibility in the future to also overwrite other events.
+- *path*: Is the base path of service - where the tree gets its data from. In (almost) all cases this is going to be http://www.ebi.ac.uk/ols (except if you e.g. run a local instance of <a href="http://www.ebi.ac.uk/ols/">OLS</a> that you want to link the plugin to)
+- *options*: This field offers the possibility to overwrite the onclick function and therefore to handle click events in a different way. Check example2 for more information. If the option field is empty {} the widget is started with default behavior - which means it links to the ols main page in case of a click event. There might be the possibility in the future to also overwrite other events.
 
 # Contact
 - Please <a href="https://github.com/LLTommy/OLS-graphview">use github</a> to report **bugs**, discuss potential **new features** or **ask questions** in general concerning the module.
-- To discuss the Ontology Lookup Service, its features or to report bugs concerning the rest of OLS, please <a href="https://github.com/EBISPOT/OLS/issues">use the OLS github page</a>
+- To discuss the Ontology Lookup Service, its features or to report bugs concerning the rest of OLS, please <a href="https://github.com/EBISPOT/OLS/issues">use the OLS github page</a> or contact ols-support@ebi.ac.uk
 
 # Dependencies
 * **JQuery**: Is used by the plugin and so it has to be available (https://jquery.com). Download the files or include e.g. https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js as script tag in your html (see examples)
