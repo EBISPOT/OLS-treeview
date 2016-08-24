@@ -1,7 +1,7 @@
 {
   "name": "ols-treeview",
-  "version": "0.0.2",
-  "description": "This is the standalone for the OLS treeview ",
+  "version": "0.0.3",
+  "description": "This is the standalone widget for the OLS treeview",
 
   "author": {
   "name": "lltommy",
@@ -9,7 +9,7 @@
 },
   "repository": {
   "type": "git",
-  "url": "git://github.com/LLTommy/ols-graphview.git"
+  "url": "git://github.com/LLTommy/ols-treeview.git"
   },
   "bugs": {
   "url": "https://github.com/LLTommy/ols-graphview/issues"
@@ -44,7 +44,9 @@
     "Ontology",
     "Lookup",
     "Service",
-    "biojs"
+    "biojs",
+    "tree",
+    "treeview"
   ]
 
 }
