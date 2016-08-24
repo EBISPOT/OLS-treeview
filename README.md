@@ -33,4 +33,4 @@ The plugin has a couple of input parameters, namely "div", "showSibblings", olso
 * **jstree**: The tree itself is created by using the jstree library, which you can find here at https://www.jstree.com/. Download the files or include e.g. https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js as script tag in your html (see examples)
 
 # If you are interested in this plugin...
-you might want to be have a look at the ols-graphview package as well, see <a href="https://github.com/LLTommy/OLS-graphview">Github</a> or <a href="https://www.npmjs.com/package/ols-treeview">npm</a>
+...you might want to have a look at the *ols-graphview* package as well, see <a href="https://github.com/LLTommy/OLS-graphview">Github</a> or <a href="https://www.npmjs.com/package/ols-treeview">npm</a>
