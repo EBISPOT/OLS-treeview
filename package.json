@@ -1,6 +1,6 @@
 {
   "name": "ols-treeview",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is the standalone widget for the OLS treeview",
 
   "author": {
@@ -25,6 +25,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mkdirp build && browserify -r ./:ols-treeview -o build/ols-treeview.js",
     "install": "npm run build",
+    "watch": "mkdirp build && watchify -r ./:ols-treeview -o build/ols-treeview.js",
     "uglify": "gulp uglify"
   },
   "devDependencies": {
