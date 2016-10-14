@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+  <script src="../build/ols-treeview.js"></script>
+  <link rel="stylesheet" href="../css/proton/style.min.css" type="text/css" media="screen" />
+
+  <!-- New Part -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div><h2>Welcome to the OLS tree example!</h2></div>
+<div id="dropDownDiv" style="height:30px; width:500px;"></div>
+<div id="term-tree" style="height:300px; width:520px; border:1px solid black;"></div>
+<script>
+
+$(document).ready(function() {
+  var app = require("ols-treeview");
+  var instance = new app();
+  instance.drawWithSelectBox("dropDownDiv", $("#term-tree"), "http://www.ebi.ac.uk/ols/", {})
+});
+
+</script>
+</body>
+</html>
