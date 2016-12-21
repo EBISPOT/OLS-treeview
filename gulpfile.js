@@ -6,6 +6,6 @@ gulp.task('uglify', function(){
  console.log("This is the task uglify from gulp");
  return gulp.src('build/ols-treeview.js')
  .pipe(uglify())
- //.pipe(rename({extname: '.min.js'}))
+ .pipe(rename({extname: '.min.js'}))
  .pipe(gulp.dest('build'));
 })
