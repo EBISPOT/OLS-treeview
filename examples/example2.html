@@ -22,7 +22,7 @@ $(document).ready(function() {
   var instance = new app();
 
   options={
-    onclick: function(params, node, relativePath, termIRI, type){
+    onclick: function(params, node, relativePath, termIRI, type, selectedIri, ontology, selectedLabel){
       alert("This onclick event is overwritten! Please check console.log to see further information about this event!");
       console.log("params")
       console.log(params);
@@ -30,6 +30,9 @@ $(document).ready(function() {
       console.log(relativePath)
       console.log(termIRI)
       console.log(type)
+      console.log(selectedIri)
+      console.log(ontology)
+      console.log(selectedLabel)
     }
   }
 

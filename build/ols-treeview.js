@@ -1859,12 +1859,13 @@ function showTree(siblings) {
                 plugins: ["sort"]
             }).bind("select_node.jstree", function(node, selected, event) {
                 var  data = $(this).jstree(true).get_json();
-                var iri  = selected.node.original.iri ? selected.node.original.iri : selected.node.original.a_attr.iri
-                var ontology =  selected.node.original.ontology_name ? selected.node.original.ontology_name : selected.node.original.a_attr.ontology_name
+                var iri  = selected.node.original.iri ? selected.node.original.iri : selected.node.original.a_attr.iri;
+                var ontology =  selected.node.original.ontology_name ? selected.node.original.ontology_name : selected.node.original.a_attr.ontology_name;
+                var label =  selected.node.text;
                 if (local_options.save_state) {
                     $.jStorage.set(iri, data);
                 }
-                local_options.onclick.call(this, event, selected, relativePath, termIri, termType, iri, ontology)
+                local_options.onclick.call(this, event, selected, relativePath, termIri, termType, iri, ontology, label)
             }).bind('after_close.jstree', function (e, data) {
                 var tree = $(this).jstree(true);
                 tree.delete_node(data.node.children);
