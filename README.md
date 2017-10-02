@@ -7,12 +7,13 @@ There are multiple ways of implementing the plugin:
 - The plugin is available as npm module - search for ols-treeview or follow <a href="https://www.npmjs.com/package/ols-treeview">this link</a> (use *npm install* and *npm run build* to install the dependencies and build and uglify the project)
 - The widget is listed on the <a href="http://www.biojs.io">bio.js website</a> where you could find other interesting visualisation for biological data
 
+
 # How to start the plugin
+**PLEASE MAKE SURE YOU USE HTTPS INSTEAD OF HTTP URLS IN THE FUTURE FOR EBI WEBSERVICE CALLS**
 ```
 var app = require("ols-treeview");
 var instance = new app();
-//instance.draw($("#term-tree"), false, "bfo", "terms", "http://purl.obolibrary.org/obo/BFO_0000182", "http://localhost:8080/ols-boot/", {});
-instance.draw($("#term-tree"), false, "bfo", "terms", "http://purl.obolibrary.org/obo/BFO_0000182", "http://www.ebi.ac.uk/ols", {});
+instance.draw($("#term-tree"), false, "bfo", "terms", "https://purl.obolibrary.org/obo/BFO_0000182", "https://www.ebi.ac.uk/ols", {});
 ```
 
 The plugin has a couple of input parameters, namely "div", "showSibblings", olsontology, ols_termtype, ols_iri, path, input_options:
