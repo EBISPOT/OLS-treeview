@@ -1788,10 +1788,12 @@ function showTree(siblings) {
         var rootUrl = relativePath + '/api/ontologies/' + ontologyName + '/' + termType + '/roots?size=500';
 
         var baseUrl = relativePath + '/api/ontologies/' + ontologyName + '/' + termType + '/';
-        var url = baseUrl + encodeURIComponent(encodeURIComponent(termIri)) + '/jstree' ;
+        var url = baseUrl + encodeURIComponent(encodeURIComponent(termIri)) + '/jstree?viewMode=All' ;
 
-        if (siblings) {
-            url += '?siblings=true';
+	if (siblings) {
+            url += '&siblings=true';
+        }else {
+            url += '&siblings=false';
         }
 
         var treeDiv = $('<div></div>')
